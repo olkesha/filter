@@ -1,0 +1,21 @@
+label,
+input {
+  &:focus {
+    outline: none;  
+  }
+}
+
+.label {
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input {
+  padding: 4px 8px;
+  border: 1px solid rgb(53, 55, 76);
+  border-radius: 8px;
+
+  &:focus-visible {
+    outline: 1px solid rgb(53, 55, 76);
+  }
+}

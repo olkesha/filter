@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 816px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,53 @@
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.container {
+  // display: flex;
+}
+
+label,
+input {
+  &:focus {
+    outline: none;  
+  }
+}
+
+.label {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  position: relative;
+  cursor: pointer;
+}
+
+.input {
+  appearance: none;
+
+  &:checked + .pseudo-checkbox::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+
+    border-radius: 50%;
+    background-color: rgb(53, 55, 76);
+  }
+}
+
+.pseudo-checkbox {
+  position: relative;
+  width: 15px;
+  height: 15px;
+
+  border: 1px solid rgb(53, 55, 76);
+  border-radius: 50%;
+}

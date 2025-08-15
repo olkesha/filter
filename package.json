@@ -1,0 +1,43 @@
+{
+  "name": "table",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --config webpack/webpack.config.js --mode development",
+    "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.js --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/plugin-transform-react-jsx": "^7.27.1",
+    "@babel/preset-env": "^7.28.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
+    "@svgr/webpack": "^8.1.0",
+    "babel-loader": "^10.0.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.4",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.90.0",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.101.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "clsx": "^2.1.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "homepage": "https://olkesha.github.io/table"
+}
